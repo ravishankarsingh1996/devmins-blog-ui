@@ -1,0 +1,37 @@
+[
+  {
+    "fonts": [
+      {
+        "asset": "MaterialIcons-Regular.ttf"
+      }
+    ],
+    "family": "MaterialIcons"
+  },
+  {
+    "family": "FontAwesomeBrands",
+    "fonts": [
+      {
+        "asset": "../../libraries/fontAwesomeFlutter/fonts/fa-brands-400.ttf",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "family": "FontAwesomeRegular",
+    "fonts": [
+      {
+        "asset": "../../libraries/fontAwesomeFlutter/fonts/fa-regular-400.ttf",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "family": "FontAwesomeSolid",
+    "fonts": [
+      {
+        "asset": "../../libraries/fontAwesomeFlutter/fonts/fa-solid-900.ttf",
+        "weight": 900
+      }
+    ]
+  }
+]

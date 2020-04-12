@@ -1,3 +1,4 @@
+import 'package:devBlog/view/blog_home.dart';
 import 'package:devBlog/view/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -5,14 +6,10 @@ import 'package:flutter/services.dart';
 import 'constants/color_constant.dart';
 
 void main() {
-  runApp(
-      MyApp(
-      )
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -28,8 +25,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         platform: TargetPlatform.iOS,
         primarySwatch: Colors.blue,
-        backgroundColor: Color.lerp(ColorConstants.colorBgNeu, Colors.grey, 0.001),
-        scaffoldBackgroundColor: ColorConstants.colorBgNeu,
+        backgroundColor: Color.lerp(ColorConstants.colorBgNeu3.withOpacity(1), ColorConstants.colorBgNeu3, 0.001),
+//        scaffoldBackgroundColor: ColorConstants.colorBgNeu,
         dialogBackgroundColor: Colors.grey[300],
         appBarTheme: AppBarTheme(
           brightness: Brightness.light,
@@ -46,7 +43,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: HomePage(),
+      home: BlogHomePage(),
     );
   }
 }
